@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EVennCorona</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>EVennCorona</h1>
+      <div class="subtitle">Annotating Protein Corona of Extracellular Vesicles by Venn Diagram</div>
+    </header>
+
+    <div class="main-content">
+      <section class="diagram-panel">
+        <div class="diagram-tools">
+          <button type="button" id="download-svg">Download SVG</button>
+          <button type="button" id="download-png">Download PNG</button>
+          <button type="button" id="download-tiff">Download TIFF (300 dpi)</button>
+        </div>
+        <div id="venn-diagram"></div>
+      </section>
+
+      <aside class="control-panel">
+        <div class="panel-section">
+          <h2>User Input</h2>
+          <label class="toggle-label user-input-toggle">
+            <input type="checkbox" id="user-input-toggle" />
+            <span>User's defined dataset</span>
+          </label>
+          <div class="dataset-toggle-row user-input-controls">
+            <input type="color" id="user-input-color" class="dataset-color-picker" />
+            <input
+              type="text"
+              id="user-input-name"
+              class="user-input-name"
+              placeholder="Enter dataset name"
+            />
+          </div>
+          <textarea id="user-input" placeholder="Enter gene symbols (one per line or comma-separated)"></textarea>
+        </div>
+
+        <div class="panel-section">
+          <h2>Corona Protein Datasets</h2>
+          <div class="dataset-color-note">Click the color box to customize.</div>
+          <div class="dataset-toggles" id="dataset-toggles"></div>
+        </div>
+
+        <div class="panel-section">
+          <h2>Exports</h2>
+          <button type="button" id="download-intersections" class="download-proteins-btn">
+            Download protein lists (CSV)
+          </button>
+        </div>
+
+      </aside>
+    </div>
+
+    <footer class="page-footer">
+      <div>For further information, please contact:</div>
+      <div>
+        <a href="https://scholar.google.com/citations?hl=en&user=XcYi6Y8AAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noopener noreferrer">
+            Somchai Chutipongtanate, MD, PhD</a></div>
+      <div>Email: <a href="mailto:schuti.rama@gmail.com">schuti.rama@gmail.com</a></div>
+    </footer>
+  </div>
+
+  <div id="tooltip" class="tooltip" style="display:none;"></div>
+
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/utif@3.1.0/UTIF.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
