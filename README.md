@@ -15,7 +15,7 @@ For quick online access, please use the web version at https://schuti.github.io/
   - Unzip the file and open the folder
 
 ## How to use
-- Open `index.html` directly in your web browser (recommended for quick use)
+- Open `index.html` directly in a browser (recommended for quick use)
 - If the browser blocks local file access, run a local server instead
   - `python3 -m http.server 8000`
   - Then open `http://localhost:8000` in your browser
