@@ -22,7 +22,7 @@ For quick online access, please use the web version at https://schuti.github.io/
 
 ## Basic workflow
 - Select up to 5 datasets from the control panel
-- Optionally paste your own gene list in the User Input area; for example, CD9, TSG101, GAPDH, ALB, IGHG1, C3.
+- Optionally paste your own gene list in the User Input area; for example, IGHG1, ALB, C3, CD9, TSG101, GAPDH.
 - The Venn diagram updates automatically as you change selections or inputs
 
 ## Optimize the diagram output
