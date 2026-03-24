@@ -35,15 +35,15 @@ For quick online access, please use the web version at https://schuti.github.io/
 EVennCorona supports custom datasets in two ways:
 - Option A: Fork on GitHub (online use)
   1.	Go to the EVennCorona GitHub page and click Fork.
-  2.	Open app.js in the forked repository.
+  2.	Open `app.js` in the forked repository.
   3.	Find the DATASETS object and add a new dataset entry.
   4.	Commit your changes.
   5.	Enable GitHub Pages and open the forked site.
 - Option B: Edit local files (offline use; recommended)
   1.	Download and unzip the repository ZIP file.
-  2.	Open app.js in a text editor.
+  2.	Open `app.js` in a text editor.
   3.	Add the new dataset inside the DATASETS object.
-  4.	Save the file and open index.html in a browser.
+  4.	Save the file and open `index.html` in a browser.
 
 ## Note on data quality
 The EVennCorona database is intentionally limited to peer-reviewed, manually curated proteomic datasets to ensure reproducibility and data quality. Accordingly, user-defined datasets are not saved or appended to the public database until they are published and formally curated. User forks represent custom versions that are not reviewed by the developer and may therefore contain unreviewed datasets.
